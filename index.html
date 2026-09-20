@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; manifest-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#0f172a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="贪吃蛇 · 本地离线 PWA：零网络请求、零数据采集、无第三方依赖">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>贪吃蛇</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>贪吃蛇</h1>
+  <div class="hud">
+    <div>分数 <span id="score">0</span></div>
+    <div>最高 <span id="best">0</span></div>
+  </div>
+  <div class="ctrl">
+    <button id="btn-pause" aria-label="暂停/继续">⏸</button>
+    <button id="btn-sound" aria-label="声音开关">🔊</button>
+  </div>
+</header>
+<main>
+  <div class="stage">
+    <canvas id="game"></canvas>
+    <div id="overlay">
+      <p id="overlay-text"></p>
+      <button id="btn-overlay">开始游戏</button>
+    </div>
+  </div>
+  <div class="dpad" aria-label="方向控制">
+    <button class="db up" data-dir="up" aria-label="上">▲</button>
+    <button class="db left" data-dir="left" aria-label="左">◀</button>
+    <button class="db down" data-dir="down" aria-label="下">▼</button>
+    <button class="db right" data-dir="right" aria-label="右">▶</button>
+  </div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
