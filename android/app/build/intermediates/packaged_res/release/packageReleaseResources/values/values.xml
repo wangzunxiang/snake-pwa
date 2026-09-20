@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">贪吃蛇</string>
-    <style name="Theme.Snake" parent="android:Theme.Material.NoActionBar.Fullscreen">
-        <item name="android:windowBackground">@android:color/black</item>
-        <item name="android:statusBarColor">#0b1120</item>
-        <item name="android:navigationBarColor">#0b1120</item>
-    </style>
-</resources>
