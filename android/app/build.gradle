@@ -14,19 +14,28 @@ android {
         versionName "1.0"
     }
 
-    signingConfigs {
-        release {
-            storeFile file('/home/kylin/keystore/snake-release.keystore')
-            storePassword "Snake@2026#Release"
-            keyAlias "snake"
-            keyPassword "Snake@2026#Release"
+    // 签名口令从本地 signing.properties 读取（该文件不入库；
+    // 文件缺失时跳过 release 签名配置，仅可构建 debug）
+    def propsFile = rootProject.file('signing.properties')
+    if (propsFile.exists()) {
+        def props = new Properties()
+        propsFile.withInputStream { props.load(it) }
+        signingConfigs {
+            release {
+                storeFile file(props['storeFile'])
+                storePassword props['storePassword']
+                keyAlias props['keyAlias']
+                keyPassword props['keyPassword']
+            }
         }
     }
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
-            signingConfig signingConfigs.release
+            if (project.android.signingConfigs.findByName('release') != null) {
+                signingConfig signingConfigs.release
+            }
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
