@@ -36,11 +36,13 @@ self.addEventListener('fetch', e => {
       if (req.mode === 'navigate') {
         return fetch(req)
           .then(res => {
-            const copy = res.clone();
-            caches.open(CACHE).then(c => c.put(req, copy));
+            if (res.ok) {
+              const copy = res.clone();
+              caches.open(CACHE).then(c => c.put(req, copy));
+            }
             return res;
           })
-          .catch(() => caches.match('./index.html'));
+          .catch(() => caches.match('./index.html').then(f => f || Response.error()));
       }
       return caches.match('./index.html').then(f => f || Response.error());
     })
