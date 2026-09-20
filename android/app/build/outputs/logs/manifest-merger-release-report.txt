@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:8:5-26:19
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:8:5-26:19
+	android:extractNativeLibs
+		INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+	android:supportsRtl
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:9:9-36
+	android:theme
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:13:9-43
+activity#com.ntsec.snake.SnakeActivity
+ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:15:9-25:20
+	android:screenOrientation
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:19:13-49
+	android:launchMode
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:20:13-44
+	android:exported
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:17:13-36
+	android:configChanges
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:18:13-87
+	android:name
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:16:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:21:13-24:29
+action#android.intent.action.MAIN
+ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml:23:27-74
+uses-sdk
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /mnt/e/workspace/snake-pwa/android/app/src/main/AndroidManifest.xml

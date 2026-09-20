@@ -1,0 +1,4 @@
+com.ntsec.snake:style/Theme.Snake = 0x7f040000
+com.ntsec.snake:string/app_name = 0x7f030000
+com.ntsec.snake:mipmap/ic_launcher = 0x7f020000
+com.ntsec.snake:layout/activity_snake = 0x7f010000

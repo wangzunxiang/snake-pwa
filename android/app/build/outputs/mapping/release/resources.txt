@@ -1,0 +1,17 @@
+android.content.res.Resources#getIdentifier present: false
+Web content present: true
+Referenced Strings:
+about:blank
+file:///android_asset/index.html
+file:///android_asset/
+@layout/activity_snake : reachable=false
+@mipmap/ic_launcher : reachable=true
+@string/app_name : reachable=true
+@style/Theme_Snake : reachable=true
+
+The root reachable resources are:
+ mipmap:ic_launcher:2130837504
+ string:app_name:2130903040
+ style:Theme_Snake:2130968576
+Unused resources are: 
+ layout:activity_snake:2130771968

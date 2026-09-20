@@ -1,0 +1,24 @@
+# compiler: R8
+# compiler_version: 8.5.35
+# min_api: 24
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: 7daf875
+# pg_map_hash: SHA-256 7daf875d732c29afa51a256347675dd67b2b9933522e6af2840ef8833f9a50db
+com.ntsec.snake.SnakeActivity -> com.ntsec.snake.SnakeActivity:
+# {"id":"sourceFile","fileName":"SnakeActivity.java"}
+com.ntsec.snake.SnakeActivity$$ExternalSyntheticApiModelOutline0 -> com.ntsec.snake.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    1:1:int m():0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:android.view.WindowInsetsController m(android.view.Window):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void m(android.view.WindowInsetsController):0:0 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:void m(android.view.WindowInsetsController,int):0:0 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:1:int m$1():0:0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+com.ntsec.snake.SnakeActivity$1 -> com.ntsec.snake.SnakeActivity$1:
+# {"id":"sourceFile","fileName":"SnakeActivity.java"}

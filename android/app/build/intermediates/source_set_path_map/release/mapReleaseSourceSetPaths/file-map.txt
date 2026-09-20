@@ -1,0 +1,8 @@
+com.ntsec.snake.app-pngs-0 /mnt/e/workspace/snake-pwa/android/app/build/generated/res/pngs/release
+com.ntsec.snake.app-resValues-1 /mnt/e/workspace/snake-pwa/android/app/build/generated/res/resValues/release
+com.ntsec.snake.app-packageReleaseResources-2 /mnt/e/workspace/snake-pwa/android/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.ntsec.snake.app-packageReleaseResources-3 /mnt/e/workspace/snake-pwa/android/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.ntsec.snake.app-merged-not-compiled-resources-4 /mnt/e/workspace/snake-pwa/android/app/build/intermediates/merged-not-compiled-resources/release
+com.ntsec.snake.app-release-5 /mnt/e/workspace/snake-pwa/android/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.ntsec.snake.app-main-6 /mnt/e/workspace/snake-pwa/android/app/src/main/res
+com.ntsec.snake.app-release-7 /mnt/e/workspace/snake-pwa/android/app/src/release/res

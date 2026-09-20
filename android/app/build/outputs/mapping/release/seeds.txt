@@ -1,0 +1,27 @@
+com.ntsec.snake.SnakeActivity
+com.ntsec.snake.R$mipmap
+com.ntsec.snake.R$layout
+com.ntsec.snake.R$string
+com.ntsec.snake.R$style
+com.ntsec.snake.R
+com.ntsec.snake.SnakeActivity$1
+com.ntsec.snake.R$string: int app_name
+com.ntsec.snake.R$layout: int activity_snake
+com.ntsec.snake.R$style: int Theme_Snake
+com.ntsec.snake.SnakeActivity$1: com.ntsec.snake.SnakeActivity this$0
+com.ntsec.snake.SnakeActivity: android.webkit.WebView webView
+com.ntsec.snake.R$mipmap: int ic_launcher
+com.ntsec.snake.R$layout: R$layout()
+com.ntsec.snake.R$mipmap: R$mipmap()
+com.ntsec.snake.SnakeActivity: void onDestroy()
+com.ntsec.snake.SnakeActivity$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)
+com.ntsec.snake.SnakeActivity: void onWindowFocusChanged(boolean)
+com.ntsec.snake.SnakeActivity: SnakeActivity()
+com.ntsec.snake.SnakeActivity: void onResume()
+com.ntsec.snake.SnakeActivity: void onPause()
+com.ntsec.snake.R$style: R$style()
+com.ntsec.snake.R: R()
+com.ntsec.snake.SnakeActivity: void immersive()
+com.ntsec.snake.R$string: R$string()
+com.ntsec.snake.SnakeActivity$1: SnakeActivity$1(com.ntsec.snake.SnakeActivity)
+com.ntsec.snake.SnakeActivity: void onCreate(android.os.Bundle)

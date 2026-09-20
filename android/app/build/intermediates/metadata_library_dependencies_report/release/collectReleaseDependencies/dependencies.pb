@@ -1,0 +1,10 @@
+
+base".
+,
+*https://maven.aliyun.com/repository/google"/
+-
++https://maven.aliyun.com/repository/central",
+*
+(https://dl.google.com/dl/android/maven2/")
+'
+%https://repo.maven.apache.org/maven2/
