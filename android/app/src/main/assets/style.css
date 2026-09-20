@@ -31,6 +31,9 @@ button {
   background: #1e293b;
   color: #e2e8f0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ctrl button { width: 40px; height: 40px; font-size: 18px; }
 main {

@@ -186,10 +186,11 @@
   // ---------- 输入 ----------
   const DIRS = { up: { x: 0, y: -1 }, down: { x: 0, y: 1 }, left: { x: -1, y: 0 }, right: { x: 1, y: 0 } };
 
-  function press(name) {
+  function press(name, repeat) {
     const d = DIRS[name];
     if (!d) return;
-    if (state === 'ready' || state === 'over') start();
+    // 长按自重复（auto-repeat）不触发重启：避免游戏结束后按住按键被意外重开
+    if (!repeat && (state === 'ready' || state === 'over')) start();
     if (d.x === -nextDir.x && d.y === -nextDir.y) return; // 禁止 180° 掉头
     nextDir = d;
   }
@@ -203,7 +204,7 @@
     const name = KEYMAP[e.key];
     if (name) {
       e.preventDefault();
-      press(name);
+      press(name, e.repeat);
     } else if (e.key === ' ' || e.key === 'Enter') {
       e.preventDefault();
       if (state === 'playing') setPaused(true);
@@ -239,7 +240,10 @@
     else if (state === 'paused') setPaused(false);
   });
 
-  function updateSoundBtn() { btnSound.textContent = soundOn ? '🔊' : '🔇'; }
+  function updateSoundBtn() {
+    const svgs = btnSound.querySelectorAll('svg');
+    svgs.forEach((sv, i) => { sv.style.display = (i === 0 ? soundOn : !soundOn) ? '' : 'none'; });
+  }
   btnSound.addEventListener('click', () => {
     soundOn = !soundOn;
     try { localStorage.setItem('snake.sound', soundOn ? 'on' : 'off'); } catch (e) { /* 忽略 */ }
