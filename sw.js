@@ -1,6 +1,6 @@
 'use strict';
 /* Service Worker：全本地缓存，同源校验，离线可玩 */
-const CACHE = 'snake-pwa-v1';
+const CACHE = 'snake-pwa-v2';
 const ASSETS = [
   './',
   'index.html',
@@ -44,7 +44,17 @@ self.addEventListener('fetch', e => {
           })
           .catch(() => caches.match('./index.html').then(f => f || Response.error()));
       }
-      return caches.match('./index.html').then(f => f || Response.error());
+      // 资源请求未命中缓存：联网获取后回填（仅 ok），离线时返回错误
+      // 注意：不得回退到 index.html，否则 404/资源缺失会被错误内容掩盖
+      return fetch(req)
+        .then(res => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then(c => c.put(req, copy));
+          }
+          return res;
+        })
+        .catch(() => Response.error());
     })
   );
 });
