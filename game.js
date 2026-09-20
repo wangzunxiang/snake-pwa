@@ -16,8 +16,8 @@
   const dpadBtns = document.querySelectorAll('.db');
 
   const GRID = 20;
-  const START_TICK = 160; // ms/步
-  const MIN_TICK = 70;
+  const START_TICK = 320; // ms/步（v1.1：原 160ms，速度减半）
+  const MIN_TICK = 140;   // ms/步下限（v1.1：原 70ms）
 
   let cells = 0;
   let snake = [];
